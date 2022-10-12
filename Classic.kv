@@ -1,0 +1,53 @@
+Mr_Raph:
+
+
+<Mr_Raph>
+    BoxLayout:
+        orientation:'vertical'
+        BoxLayout:
+            orientation:'vertical'
+            Label:
+                pos_hint:{'center_x': 0.5, 'y': 0.5}
+                size_hint:.6,.6
+                text:'Classic'
+                color:1,1,0,1
+                font_name: ("Nexa-Black-Italic.otf")
+                font_size:"30dp"
+            Label:
+                #pos: self.size
+                pos_hint:{'center_x': 0.5, 'y': 0.5}
+                size_hint:.6,.6
+                text:'Courses and Programs from the best university in the world'
+                color:1,1,0,1
+                font_name: ("font3.ttf")
+                font_size:"30dp"
+        Label:
+            #pos:('370', '480')
+            size:('150', '50')
+            text:'WHAT DO YOU WANT TO LEARN'
+            color:1,1,0,1
+            font_name: ("font4.ttf")
+            font_size:dp(25)
+        TextInput:
+            hint_text:'Q search our 3000+ course'
+            pos_hint:{'center_x': 0.5, 'center_y': 1}
+            size_hint:.5,.3
+            multiline: False
+            font_name: ("font4.ttf")
+            font_size:dp(10)
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint:.2,.1
+            pos_hint:{'center_x': 0.5, 'center_y': 1}
+            Button:
+                text: 'Register'
+                #size: '80','30'
+                #pos: '400','360'
+                background_color: 0,0,0
+            Button:
+                text: 'Sign In'
+                #size: '80','30'
+                #pos: '500','360'
+                background_color: 0,0,0
+

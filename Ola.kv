@@ -1,0 +1,18 @@
+OurLayout:
+
+<OurLayout>
+
+    ToggleButton:
+        text: 'on'
+        pos: (700,200)
+        on_state: root.open(self)
+
+    Button:
+        text: 'up'
+        on_press: root.Moveup()
+        disabled : not root.enable
+
+    Switch:
+        text: 'switch'
+        pos: (0,500)
+        on_active: root.On_Switch_active(self)

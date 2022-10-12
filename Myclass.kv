@@ -1,0 +1,186 @@
+ScrollViewLayoutExp:
+
+<CanvasExp5>:
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 0,0,1
+            Rectangle:
+                size:self.size
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 1,1,1
+            Rectangle:
+                size:self.size
+    RelativeLayout:
+        canvas:
+            Color:
+                rgb: 1,0,0
+            Rectangle:
+                size:self.size
+<CanvasExp4>:
+    BoxLayout:
+        size: root.size
+        Widget:
+            canvas:
+                Color:
+                    rgb: 1,0,0
+                Rectangle:
+                    size:self.size
+        RelativeLayout:
+            canvas:
+                Color:
+                    rgb: 0,1,0
+                Rectangle:
+                    size:self.size
+
+
+
+
+
+
+<CanvasExp3>:
+    Button:
+        text:'click'
+        pos:dp(50),dp(200)
+        on_press: root.press_but()
+
+
+<CanvasExp2>
+    Button:
+        text:'click'
+        pos:dp(50),dp(200)
+        on_press: root.press_but()
+
+<CanvasExp1>:
+    canvas:
+        Rectangle:
+            pos: dp(100),dp(200)
+            size: dp(50),dp(50)
+
+
+
+<ImageExp>:
+    cols:3
+    Image:
+        source: 'bg1.jpg'
+    Image:
+        source: 'bg1.jpg'
+    Image:
+        source: 'bg1.jpg'
+<WidgetExp>:
+    cols: 3
+    ToggleButton:
+        text: 'OFF'
+        on_state: root.togglebutton_click(self)
+        disabled: not my_switch.active
+    Button:
+        text: 'click me'
+        on_press: root.button_click(self)
+        disabled: not root.enabled
+
+    Label:
+        text: root.text
+        font_name: 'font4.ttf'
+        font_size: dp(70)
+        color: 1,.2,.2,1
+    Switch:
+        id: my_switch
+        on_active: root.switch_click(self)
+        active: True
+    Slider:
+        id: my_slider
+        min:0
+        max: 100
+        #on_value: root.slider_value(self)
+        orientation: "vertical"
+        disabled: not my_switch.active
+    BoxLayout:
+        orientation: 'vertical'
+        ProgressBar:
+            value:my_slider.value
+        Label:
+            text:  str(my_slider.value)
+            font_name: 'font4.ttf'
+            color: 1,.2,.2,1
+    TextInput:
+        id: my_text
+        text: ''
+        on_text_validate: root.validate_textinput(self)
+        multiline: False
+
+    Label:
+        text: root.text_input
+
+
+
+
+<PageLayoutExp@PageLayout>:
+    ScrollViewLayoutExp:
+    GridLayoutExp:
+    AnchorLayoutExp:
+    MainWidget:
+
+
+<StackLayoutExp>:
+
+<ScrollViewLayoutExp@ScrollView>:
+   # StackLayoutExp:
+    #    size_hint: 1,None
+     #   height: self.minimum_height
+    GridLayoutExp:
+        size_hint: 1,None
+        height: self.minimum_height
+
+
+
+
+<GridLayoutExp@GridLayout>:
+    #rows: 2
+    cols:2
+    Button:
+        text: '1'
+        size_hint: 1,.7
+    Button:
+        text: '2'
+        size_hint: 1,1
+    MainWidget:
+    Button:
+        text: '4'
+        size_hint: 1,1
+    Button:
+        text: '5'
+        size_hint: 1,.7
+    Button:
+        text: '6'
+        size_hint: 1,1
+
+<MainWidget>:
+    BoxLayout:
+        Button:
+            text: '1'
+            size_hint: .3,1
+        BoxLayout:
+            size_hint: .3,1
+            orientation:"vertical"
+            Button:
+                text: '1'
+                size_hint: 1,.7
+            Button:
+                text: '2'
+                size_hint: 1,1
+        Label:
+            text: '3'
+            size_hint: 1,1
+
+<AnchorLayoutExp>:
+    AnchorLayout:
+        anchor_x:'center'
+        anchor_y:'top'
+        BoxLayout:
+            size_hint: .2,.2
+            Button:
+                text: '1'
+            Button:
+                text: '1'

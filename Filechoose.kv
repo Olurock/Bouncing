@@ -1,0 +1,11 @@
+Root:
+    id: my
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width,root.height
+        Image:
+            id: image
+            source: ('')
+        FileChooserIconView:
+            id: fc
+            on_selection:my.selected(fc.selection)

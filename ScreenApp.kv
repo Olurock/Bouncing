@@ -1,0 +1,16 @@
+MainScreen:
+
+
+<MainScreen>
+    BoxLayout:
+        Button:
+            text: 'Go to Dashboard'
+            on_press: root.manager.current = 'MYDASH'
+            on_press: root.manager.transition.direction = 'right'
+
+<DashboardScreen>
+    BoxLayout:
+        Button:
+            text: 'Back'
+            on_press: root.manager.current = 'MENU'
+            on_press: root.manager.transition.direction = 'left'

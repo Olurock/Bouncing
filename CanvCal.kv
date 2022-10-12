@@ -1,0 +1,146 @@
+#WidgetExp:
+Calculate:
+
+<Calculate>:
+    orientation: 'vertical'
+    margin:2
+    spacing: 1.5
+    Label:
+        text: root.show
+        color: .5,1,.2,.6
+    BoxLayout:
+        spacing: 1
+        size_hint:1,.5
+        BoxLayout:
+            Button:
+                text: '7'
+                background_color: 1,0,0,1
+                on_press: root.seven()
+            Button:
+                text: '8'
+                background_color: 1,0,0,1
+                on_press: root.eight()
+            Button:
+                text: '9'
+                background_color: 1,0,0,1
+                on_press: root.nine()
+        BoxLayout:
+            Button:
+                text: '-'
+                background_color: 1,.4,0,1
+                on_press: root.minus()
+            Button:
+                text: '/'
+                background_color: 1,.4,0,1
+                on_press: root.divide()
+        BoxLayout:
+            Button:
+                text: 'Bin'
+                background_color: .5,.7,.9,1
+            Button:
+                text: 'Hex'
+                background_color: .5,.7,.9,1
+    BoxLayout:
+        orientation: 'horizontal'
+        BoxLayout
+            orientation: 'vertical'
+            BoxLayout:
+                orientation: 'horizontal'
+                Button:
+                    text: '4'
+                    background_color: 1,0,0,1
+                    on_press: root.four()
+                Button:
+                    text: '5'
+                    background_color: 1,0,0,1
+                    on_press: root.five()
+                Button:
+                    text: '6'
+                    background_color: 1,0,0,1
+                    on_press: root.six()
+            BoxLayout:
+                orientation: 'horizontal'
+                Button:
+                    text: '1'
+                    background_color: 1,0,0,1
+                    on_press: root.one()
+                Button:
+                    text: '2'
+                    background_color: 1,0,0,1
+                    on_press: root.two()
+                Button:
+                    text: '3'
+                    background_color: 1,0,0,1
+                    on_press: root.three()
+        BoxLayout:
+            orientation: 'vertical'
+            BoxLayout:
+                orientation: 'horizontal'
+                BoxLayout:
+                    Button:
+                        text:'+'
+                        size_hint:1,1
+                        background_color: 1,.4,0,1
+                        on_press: root.plus()
+                BoxLayout:
+                    orientation: 'vertical'
+                    BoxLayout:
+                        Button:
+                            text:'%'
+                            size_hint:1,1
+                            background_color: 1,.4,0,1
+                            on_press: root.percent()
+                    BoxLayout:
+                        Button:
+                            text:'x'
+                            size_hint:1,1
+                            background_color: 1,.4,0,1
+                            on_press: root.multiply()
+        BoxLayout:
+            orientation: 'vertical'
+            BoxLayout:
+                orientation: 'horizontal'
+                Button:
+                    text: 'Oct'
+                    background_color: .5,.7,.9,1
+                Button:
+                    text: 'Log'
+                    background_color: .5,.7,.9,1
+            BoxLayout:
+                orientation: 'horizontal'
+                Button:
+                    text: 'Cos'
+                    background_color: .5,.7,.9,1
+                Button:
+                    text: 'Sin'
+                    background_color: .5,.7,.9,1
+
+    BoxLayout:
+        size_hint:1,0.5
+        BoxLayout:
+            Button:
+                text: '0'
+                background_color: 1,0,0,
+                on_press: root.zero()
+            Button:
+                text: '.'
+                background_color: 1,0,0,1
+                on_press: root.dot()
+            Button:
+                text: 'c'
+                background_color: 1,0,0,1
+                on_press: root.clear()
+        BoxLayout:
+            Button:
+                text: '='
+                on_press: root.equals_to()
+                background_color: 1,.4,0,1
+        BoxLayout:
+            Button:
+                text: 'tan'
+                background_color: .5,.7,.9,1
+            Button:
+                text: '<<<<'
+                background_color: .5,.7,.9,1
+                on_press: root.back()
+

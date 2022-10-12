@@ -1,0 +1,20 @@
+MainWidget:
+
+<MainWidget>:
+    orientation: 'vertical'
+    BoxLayout:
+        Label:
+            text: 'press order now to order:'+root.Show
+    BoxLayout:
+        TextInput:
+            id: myord
+            hint_text: 'Input Your Order'
+            background_color: 1,0,0,1
+            size_hint: 1,.8
+            on_text_validate: root.validate_textinput()
+            multiline: False
+    BoxLayout:
+        Button:
+            text: 'Order now'
+            background_color: 1.0,0,1
+            on_press:

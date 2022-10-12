@@ -1,0 +1,16 @@
+OurLayout:
+
+<OurLayout>
+    Button:
+        text: 'up'
+        on_press: root.moveup
+        disabled: not root.enable
+    ToggleButton:
+        text:'on'
+        pos:(700,200)
+        on_state: root.onstate(self)
+    Label:
+        text:'Hello'
+        pos: (200,200)
+
+

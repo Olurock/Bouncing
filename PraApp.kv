@@ -1,0 +1,41 @@
+LayoutExp:
+
+<LayoutExp>:
+    orientation: 'vertical'
+    BoxLayout:
+        size_hint: 1,.18
+        Label:
+            text: 'Olurock \nChristAmbassador'
+            color: .5,1,.2
+        Label:
+            text:
+        Label:
+            text:
+        Label:
+            text: 'Search \n.\n.\n.'
+            color: .5,1,.2
+    BoxLayout:
+        size_hint: 1,.1
+        Button:
+            text: 'Camera'
+            on_press: root.Camera()
+            color: .5,1,.2
+            size: 1, .3
+        Button:
+            text: 'Chat'
+            on_press: root.Chat()
+            size: 1, .3
+        Button:
+            text: 'Status'
+            on_press: root.Status()
+            size: 1, .3
+        Button:
+            text: 'Calls'
+            on_press: root.Calls()
+            color: .5,1,.2
+            size: 1, .3
+    BoxLayout:
+        size: .2,1
+        Label:
+            text: root.chat
+            pos_hint: {'Left': 0, 'y': 0}

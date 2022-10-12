@@ -1,0 +1,17 @@
+Widgetexp:
+
+
+
+<Widgetexp>
+    orientation: 'vertical'
+    Label:
+        text: root.show
+    BoxLayout:
+        ToggleButton:
+            text: 'Launch'
+            on_state: root.launch(self)
+    BoxLayout:
+        Button:
+            text: 'Click'
+            on_press: root.click()
+            disabled : not root.enabled

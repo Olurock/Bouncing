@@ -1,0 +1,73 @@
+ImageExp:
+
+<ImageExp>:
+    canvas:
+        Color:
+            rgb: 0,1,1
+        Rectangle:
+            size:self.size
+    padding: 5
+    spacing: 5
+    BoxLayout:
+        size_hint: .5,1
+        pos_hint:{'x':1,'center_y': .5}
+        RelativeLayout:
+            canvas:
+                Color:
+                    rgb: .5,0,1
+                Rectangle:
+                    size:self.size
+            RelativeLayout:
+                size_hint: .9,.4
+                pos_hint:{'center_x': .5, 'center_y': .5}
+                RelativeLayout:
+                    canvas.after:
+                        Color:
+                            rgb: 1, 1, 1
+                        Ellipse:
+                            source: 'ass1.png'
+                            angle_start: 0
+                            angle_end: 360
+                            size:self.size
+    BoxLayout:
+        size_hint: .5,1
+        pos_hint:{'x':1,'center_y': .5}
+        RelativeLayout:
+            canvas:
+                Color:
+                    rgb: .5,0,1
+                Rectangle:
+                    size:self.size
+            RelativeLayout:
+                size_hint: .9,.4
+                pos_hint:{'center_x': .5, 'center_y': .5}
+                RelativeLayout:
+                    canvas.after:
+                        Color:
+                            rgb: 1, 1, 1
+                        Ellipse:
+                            source: 'bg1.jpg'
+                            angle_start: 0
+                            angle_end: 360
+                            size:self.size
+    BoxLayout:
+        size_hint: .5,1
+        pos_hint:{'x':1,'center_y': .5}
+        RelativeLayout:
+            canvas:
+                Color:
+                    rgb: .5,0,1
+                Rectangle:
+                    size:self.size
+            RelativeLayout:
+                size_hint: .9,.4
+                pos_hint:{'center_x': .5, 'center_y': .5}
+                RelativeLayout:
+                    canvas.after:
+                        Color:
+                            rgb: 1, 1, 1
+                        Ellipse:
+                            source: 'ass1.png'
+                            angle_start: 0
+                            angle_end: 360
+                            size:self.size

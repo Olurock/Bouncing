@@ -1,0 +1,33 @@
+SnakePart:
+
+<SnakePart>:
+    ToggleButton:
+        id: up
+        text: 'up'
+        on_state: root.Moveup(self)
+        disabled : not root.enable
+        size:40,40
+        pos: 50,50
+    ToggleButton:
+        id: down
+        text: 'down'
+        on_state: root.Movedown(self)
+        disabled : not root.enable
+        pos: 50,0
+        size:40,40
+    ToggleButton:
+        id: right
+        text: 'right'
+        on_state: root.Moveright(self)
+        disabled : not root.enable
+        size:40,40
+        pos: 100,25
+    ToggleButton:
+        id:left
+        text: 'left'
+        on_state: root.Moveleft(self)
+        disabled : not root.enable
+        size:40,40
+        pos: 0,25
+
+
